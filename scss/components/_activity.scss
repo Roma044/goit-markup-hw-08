@@ -1,0 +1,62 @@
+.project {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.activity__title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.activity__title {
+  margin-bottom: 50px;
+}
+
+.project img {
+  display: block;
+}
+
+.activity__list {
+  display: flex;
+}
+
+.activity__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.project__section .img {
+  display: block;
+}
+
+.activity__base {
+  position: relative;
+}
+
+// Напис по верх картинок
+
+.activity__inform {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-white-color);
+}
