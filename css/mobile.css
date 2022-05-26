@@ -1,0 +1,50 @@
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.mob-menu .container {
+  display: block;
+}
+
+.close-menu__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.mob__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.mob-contact__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}/*# sourceMappingURL=mobile.css.map */
