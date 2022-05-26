@@ -1,18 +1,35 @@
 .subscribe {
-  margin-left: auto;
+  // margin-left: auto;
+  margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 
 .subscribe__field {
-  display: flex;
-  margin-top: 20px;
+  // display: flex;
+  // margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .subscribe__email {
+  width: 100%;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    width: 358px;
+  }
+
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
   margin-right: 12px;
-  width: 358px;
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -36,9 +53,14 @@
 }
 
 .subscribe__button {
-  display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 
   width: 200px;
   height: 50px;

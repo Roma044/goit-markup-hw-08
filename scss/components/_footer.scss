@@ -1,6 +1,24 @@
 .footer__section {
   padding: 60px 0;
   background-color: var(--secondary-background-color);
+
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
 }
 
 .logo {
@@ -22,7 +40,7 @@
   line-height: 1.71;
 }
 .footer__address--link {
-  display: inline-block;
+  // display: inline-block;
 
   color: var(--contact-info-color);
   opacity: 60%;
@@ -42,10 +60,10 @@
 
 //  Приєднуйтесь і іконки
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
-}
+// .footer__container {
+//   display: flex;
+//   align-items: baseline;
+// }
 
 .footer__socials--title {
   font-size: 14px;
@@ -55,6 +73,13 @@
   color: var(--primary-white-color);
 
   margin-bottom: 20px;
+}
+
+.footer__socials {
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .footer__socials {
