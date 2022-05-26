@@ -90,7 +90,6 @@ body {
 .header {
   border-bottom: 1px solid #ececec;
 }
-
 .container__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,6 +97,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .container__header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .nav {
@@ -107,6 +116,25 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.logo__top {
+  padding: 16px 0px;
+}
+@media screen and (min-width: 768px) {
+  .logo__top {
+    margin-right: 88px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo__top {
+    margin-right: 94px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .logo__top {
@@ -141,19 +169,28 @@ body {
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-left: 93px;
+  }
+}
+.nav__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav__list .nav__item .nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-right: 50px;
 }
 
 .nav__list {
@@ -196,17 +233,28 @@ body {
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: block;
+    margin-left: 84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contact__icon-mail {
   fill: currentColor;
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,18 +266,47 @@ body {
 .contact__icon-mail:hover, .contact__icon-mail:focus {
   fill: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .contact__icon-mail {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon-mail {
+    width: 16px;
+    height: 10px;
+  }
+}
 
 .contact__icon-phone {
   margin-right: 10px;
-  width: 10px;
-  height: 16px;
+  width: 14px;
+  height: 10px;
   fill: currentColor;
   -webkit-transition: fill 250ms var(--timing-function);
   transition: fill 250ms var(--timing-function);
 }
+@media screen and (min-width: 1200px) {
+  .contact__icon-phone {
+    width: 16px;
+    height: 10px;
+  }
+}
 
-.contact__item + .contact__item {
-  margin-left: 50px;
+.contacts__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__item + .contact__item {
+    margin-left: 50px;
+  }
 }
 
 .contact__link {
@@ -238,10 +315,17 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   -webkit-transition: color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  }
 }
 
 .contact__link {
@@ -396,10 +480,11 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .feature__text {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 }
 

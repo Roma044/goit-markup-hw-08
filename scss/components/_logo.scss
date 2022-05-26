@@ -3,6 +3,21 @@
 // }
 
 .logo__top {
+  padding: 16px 0px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    justify-content: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 94px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.logo__top {
   margin-right: 93px;
   color: var(--accent-color);
 

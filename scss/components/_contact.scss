@@ -1,13 +1,22 @@
 .contact {
-  display: flex;
-  margin-left: auto;
+  // display: flex;
+  // margin-left: auto;
+  display: none;
+  @media screen and(min-width:768px) {
+    display: block;
+    margin-left: 84px;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contact__icon-mail {
   fill: currentColor;
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -15,19 +24,42 @@
   &:focus {
     fill: var(--accent-color);
   }
+
+  @media screen and(min-width:768px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 16px;
+    height: 10px;
+  }
 }
 
 .contact__icon-phone {
   margin-right: 10px;
-  width: 10px;
-  height: 16px;
+  width: 14px;
+  height: 10px;
   fill: currentColor;
 
   transition: fill 250ms var(--timing-function);
+  @media screen and(min-width:1200px) {
+    width: 16px;
+    height: 10px;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 10px;
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
 }
 
 .contact__item + .contact__item {
-  margin-left: 50px;
+  @media screen and(min-width:1200px) {
+    margin-left: 50px;
+  }
 }
 
 .contact__link {
@@ -37,10 +69,16 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.16;
   letter-spacing: 0.02em;
 
   transition: color 250ms var(--timing-function);
+
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  }
 }
 
 .contact__link {
