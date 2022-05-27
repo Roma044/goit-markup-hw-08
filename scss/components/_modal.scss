@@ -6,12 +6,27 @@
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
 
-  min-width: 528px;
-  min-height: 581px;
+  width: 100vw;
+  height: 100vh;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
+
+  @media screen and (max-width: 479px) {
+    max-width: 98vw;
+    height: auto;
+  }
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    min-height: 609px;
+  }
 }
 
 .modal__button {
@@ -40,15 +55,19 @@
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal__input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -67,6 +86,7 @@
 }
 
 .modal__label {
+  width: 100%;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -77,8 +97,8 @@
 }
 
 .modal__comment {
-  width: 448px;
-  height: 120px;
+  width: 100%;
+  min-height: 120px;
   padding: 12px 16px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);

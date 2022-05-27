@@ -1,48 +1,70 @@
-.nav {
-  // display: flex;
-  // align-items: center;
-  display: none;
-  @media screen and(min-width:768px) {
-    display: flex;
-  }
-  @media screen and(min-width:1200px) {
-    margin-left: 93px;
-  }
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
+// .nav {
+//   // display: flex;
+//   // align-items: center;
+//   display: none;
+//   @media screen and(min-width:768px) {
+//     display: flex;
+//   }
+//   @media screen and(min-width:1200px) {
+//     margin-left: 93px;
+//   }
+//   &__item:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
 
-.nav__list .nav__item .nav__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  // margin-right: 50px;
+// .nav__list .nav__item .nav__link {
+//   display: block;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+//   // margin-right: 50px;
+// }
+
+// .nav__list {
+//   display: flex;
+// }
+
+// //  Нижнє підкреслення (синя лінія)
+
+// }
+.nav {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .nav__list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.nav__item + .nav__item {
+  @media screen and (min-width: 768px) {
+    margin-left: 50px;
+  }
 }
 
 .nav__link {
-  color: var(--main-text-color);
-  text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-  font-style: normal;
+  position: relative;
+  transition: color 250ms var(--timing-function);
+  color: var(--main-text-color);
+
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-
-  transition: color 250ms var(--timing-function);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
-
-//  Нижнє підкреслення (синя лінія)
 
 .nav__link.current {
   position: relative;
