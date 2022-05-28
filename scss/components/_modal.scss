@@ -6,26 +6,24 @@
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
 
-  width: 100vw;
-  height: 100vh;
-  background-color: #ffffff;
+  width: 100%;
+  background-color: var(--main-page-background-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  @media screen and (min-width: 1200px) {
-    width: 528px;
-    min-height: 581px;
-  }
-
   @media screen and (max-width: 479px) {
-    max-width: 98vw;
-    height: auto;
+    max-width: 100%;
+    padding: 40px 10px;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 480px) {
     width: 450px;
-    min-height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -35,7 +33,7 @@
   right: 8px;
   width: 30px;
   height: 30px;
-  background: #ffffff;
+  background: var(--main-page-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50px;

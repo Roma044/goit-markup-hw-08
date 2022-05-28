@@ -101,8 +101,6 @@
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  transition: color 250ms var(--timing-function),
-    fill 250ms var(--timing-function);
 
   &:focus,
   &:hover {
@@ -113,8 +111,6 @@
 
 .contact--link__icon {
   fill: currentColor;
-  transition: color 250ms var(--timing-function),
-    fill 250ms var(--timing-function);
   @media screen and (min-width: 768px) {
     margin-right: 8px;
   }

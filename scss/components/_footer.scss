@@ -82,12 +82,13 @@
   }
 }
 
-.footer__socials {
-  margin-left: 70px;
-}
+// .footer__socials {
+//   margin-left: 70px;
+// }
 
 .footer__socials--list {
   display: flex;
+  justify-content: center;
 }
 
 .footer__socials--item:not(:last-child) {

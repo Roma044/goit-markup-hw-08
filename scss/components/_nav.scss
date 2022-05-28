@@ -1,32 +1,4 @@
-// .nav {
-//   // display: flex;
-//   // align-items: center;
-//   display: none;
-//   @media screen and(min-width:768px) {
-//     display: flex;
-//   }
-//   @media screen and(min-width:1200px) {
-//     margin-left: 93px;
-//   }
-//   &__item:not(:last-child) {
-//     margin-right: 50px;
-//   }
-// }
 
-// .nav__list .nav__item .nav__link {
-//   display: block;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-//   // margin-right: 50px;
-// }
-
-// .nav__list {
-//   display: flex;
-// }
-
-// //  Нижнє підкреслення (синя лінія)
-
-// }
 .nav {
   @media screen and (max-width: 768px) {
     display: none;
@@ -65,6 +37,10 @@
     color: var(--accent-color);
   }
 }
+
+
+// Нижнє підкреслення (синя лінія)
+
 
 .nav__link.current {
   position: relative;
