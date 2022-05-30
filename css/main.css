@@ -307,8 +307,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/head-mob.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head-mob.jpg);
   background-repeat: no-repeat;
@@ -335,6 +335,10 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__page {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    min-height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/head-desk.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head-desk.jpg);
   }
@@ -1172,7 +1176,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .example__item {
   max-width: 450px;
   margin-bottom: 30px;
@@ -1277,6 +1280,11 @@ body {
   border: 1px solid var(--border-color);
   border-top: transparent;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .example__preview {
+    width: 354px;
+  }
+}
 
 .example__title {
   margin-bottom: 4px;
@@ -1285,6 +1293,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .example__content {
@@ -1333,6 +1342,11 @@ body {
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 380px) {
+  .modal {
+    height: 100vh;
+  }
 }
 @media screen and (max-width: 479px) {
   .modal {
@@ -1670,6 +1684,10 @@ body {
           flex-direction: column;
 }
 
+.mob-menu__link.current {
+  color: var(--accent-color);
+}
+
 .mob-menu__link {
   font-style: normal;
   font-weight: 500;
@@ -1702,13 +1720,18 @@ body {
 }
 
 .mob-contacts__tel {
-  font-style: normal;
-  font-weight: 500;
   font-size: 34px;
-  line-height: 1.18;
+  font-weight: 500;
+  line-height: 40px;
   letter-spacing: 0.02em;
+  text-align: left;
   color: var(--accent-color);
   text-decoration: none;
+}
+@media screen and (max-width: 479px) {
+  .mob-contacts__tel {
+    font-size: 32px;
+  }
 }
 
 .mob-contacts__mail {
@@ -1757,4 +1780,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-color);
   text-decoration: none;
+}
+@media screen and (max-width: 479px) {
+  .mob-social__link {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=main.css.map */

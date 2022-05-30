@@ -3,6 +3,9 @@
 .example {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 380px) {
+  }
 }
 
 .example__item {
@@ -111,6 +114,10 @@
 
   border: 1px solid var(--border-color);
   border-top: transparent;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
 }
 
 .example__title {
@@ -120,6 +127,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .example__content {
