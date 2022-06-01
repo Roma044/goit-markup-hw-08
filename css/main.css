@@ -1237,6 +1237,15 @@ body {
   padding-left: 24px;
   padding-right: 24px;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .example__text {
+    font-size: 14px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 40px 24px;
+  }
+}
 @media screen and (min-width: 768px) {
   .example__text {
     padding-top: 49px;
@@ -1310,6 +1319,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  overflow-y: scroll;
   opacity: 1;
   width: 100vw;
   height: 100vh;
